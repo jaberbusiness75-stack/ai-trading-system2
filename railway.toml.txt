@@ -1,0 +1,9 @@
+[build]
+builder = "nixpacks"
+
+[deploy]
+startCommand = "python main_bot.py"
+
+[[services]]
+name = "trading-bot"
+type = "worker"

@@ -1,0 +1,1280 @@
+2025-11-20 14:57:14,176 - __main__ - INFO - بدء تشغيل نظام التداول الآلي
+2025-11-20 14:57:14,734 - telegram_bot - INFO - ✅ تم استيراد DataProvider بنجاح
+2025-11-20 14:57:14,734 - telegram_bot - INFO - 🤖 تهيئة بوت التداول...
+2025-11-20 14:57:15,448 - data_provider - INFO - ✅ pandas-ta متوفر للمؤشرات الفنية
+2025-11-20 14:57:15,448 - data_provider - INFO - ✅ MT5 متاح وجاهز للاستخدام
+2025-11-20 14:57:15,448 - data_provider - INFO - 🧪 اختبار مصدر البيانات: mt5
+2025-11-20 14:57:15,479 - data_provider - INFO - ✅ تم جلب 24 شمعة من MT5 لـ EURUSD
+2025-11-20 14:57:16,499 - data_provider - INFO - 🧪 اختبار مصدر البيانات: yfinance
+2025-11-20 14:57:16,499 - data_provider - INFO - 🔍 محاولة Yahoo Finance بالرمز: EURUSD=X
+2025-11-20 14:57:17,985 - data_provider - INFO - 🧪 اختبار مصدر البيانات: frankfurter
+2025-11-20 14:57:19,522 - data_provider - INFO - 🧪 اختبار مصدر البيانات: twelvedata
+2025-11-20 14:57:20,028 - data_provider - INFO - ✅ نجح Twelve Data لـ EURUSD
+2025-11-20 14:57:21,049 - data_provider - INFO - 🧪 اختبار مصدر البيانات: alphavantage
+2025-11-20 14:57:22,571 - data_provider - INFO - 🧪 نتائج اختبار المصادر: {'mt5': True, 'yfinance': False, 'frankfurter': False, 'twelvedata': True, 'alphavantage': False}
+2025-11-20 14:57:22,571 - data_provider - INFO - 🧪 حالة مصادر البيانات: {'mt5': True, 'yfinance': False, 'frankfurter': False, 'twelvedata': True, 'alphavantage': False}
+2025-11-20 14:57:22,571 - risk_management - INFO - تهيئة RiskManager برصيد: $10000.0
+2025-11-20 14:57:22,571 - advanced_analysis - INFO - ✅ تم تهيئة نظام التحليل المتقدم
+2025-11-20 14:57:22,571 - economic_calendar - INFO - ✅ تم تهيئة التقويم الاقتصادي
+2025-11-20 14:57:22,571 - session_manager - INFO - ✅ تم تهيئة مدير الجلسات
+2025-11-20 14:57:22,981 - telegram_bot - INFO - ✅ تم إعداد معالجات الأوامر
+2025-11-20 14:57:22,981 - telegram_bot - INFO - ✅ تم تهيئة TradingBot بنجاح
+2025-11-20 14:57:22,981 - telegram_bot - INFO - 🚀 بدء تشغيل بوت التليجرام...
+2025-11-20 14:57:23,205 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getMe "HTTP/1.1 200 OK"
+2025-11-20 14:57:23,272 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/deleteWebhook "HTTP/1.1 200 OK"
+2025-11-20 14:57:23,272 - telegram.ext.Application - INFO - Application started
+2025-11-20 14:57:29,779 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 14:57:30,085 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/sendMessage "HTTP/1.1 200 OK"
+2025-11-20 14:57:30,085 - telegram_bot - INFO - تم ترحيب المستخدم 8038054107
+2025-11-20 14:57:34,291 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 14:57:44,414 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 14:57:54,493 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 14:58:04,573 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 14:58:14,659 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 14:58:24,742 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 14:58:34,824 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 14:58:44,903 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 14:58:55,003 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 14:59:05,095 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 14:59:15,190 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 14:59:25,276 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 14:59:35,350 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 14:59:45,432 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 14:59:55,515 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:00:05,604 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:00:15,693 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:00:25,783 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:00:35,854 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:00:45,923 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:00:55,997 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:01:06,089 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:01:16,173 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:01:26,284 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:01:36,350 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:01:46,443 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:01:56,502 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:02:06,574 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:02:16,644 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:02:26,699 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:02:36,766 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:02:46,833 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:02:56,920 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:03:07,008 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:03:17,092 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:03:27,154 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:03:37,221 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:03:47,291 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:03:57,351 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:04:07,450 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:04:17,540 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:04:27,620 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:04:37,708 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:04:47,783 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:04:57,893 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:05:07,986 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:05:18,088 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:05:28,167 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:05:38,249 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:05:48,348 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:05:58,424 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:06:08,500 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:06:18,600 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:06:28,701 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:06:38,806 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:06:48,923 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:06:59,029 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:07:09,093 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:07:19,166 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:07:29,245 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:07:39,331 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:07:49,413 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:07:59,488 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:08:09,557 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:08:19,648 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:08:29,726 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:08:39,809 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:08:49,869 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:08:59,954 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:09:10,023 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:09:20,102 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:09:30,214 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:09:40,282 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:09:50,346 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:10:00,442 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:10:10,550 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:10:20,636 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:10:30,743 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:10:40,846 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:10:50,933 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:11:01,024 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:11:11,100 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:11:21,218 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:11:31,291 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:11:41,368 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:11:51,481 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:12:01,595 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:12:11,690 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:12:21,789 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:12:31,863 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:12:41,953 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:12:52,018 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:13:02,129 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:13:12,220 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:13:22,302 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:13:32,381 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:13:42,461 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:13:52,533 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:14:02,613 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:14:13,044 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:14:23,137 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:14:33,203 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:14:43,295 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:14:53,410 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:15:03,458 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:17:39,202 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:17:49,284 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:17:59,349 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:18:09,426 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:18:19,505 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:18:29,595 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:18:39,665 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:18:49,786 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:18:59,892 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:19:10,011 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:19:20,111 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:19:30,198 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:19:40,285 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:19:50,371 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:20:00,430 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:20:10,528 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:20:20,624 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:20:30,724 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:20:40,810 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:20:50,895 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:21:00,974 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:21:11,081 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:21:21,168 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:21:31,260 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:21:41,838 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:21:52,162 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:22:02,263 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:22:02,370 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:22:12,490 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:22:22,758 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:22:32,893 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:22:43,015 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:22:59,708 - __main__ - INFO - بدء تشغيل نظام التداول الآلي
+2025-11-20 15:23:00,294 - telegram_bot - INFO - ✅ تم استيراد DataProvider بنجاح
+2025-11-20 15:23:00,294 - telegram_bot - INFO - 🤖 تهيئة بوت التداول...
+2025-11-20 15:23:00,644 - data_provider - INFO - ✅ pandas-ta متوفر للمؤشرات الفنية
+2025-11-20 15:23:00,644 - data_provider - INFO - ✅ MT5 متاح وجاهز للاستخدام
+2025-11-20 15:23:00,644 - data_provider - INFO - 🧪 اختبار مصدر البيانات: mt5
+2025-11-20 15:23:00,662 - data_provider - INFO - ✅ تم جلب 24 شمعة من MT5 لـ EURUSD
+2025-11-20 15:23:01,668 - data_provider - INFO - 🧪 اختبار مصدر البيانات: yfinance
+2025-11-20 15:23:01,668 - data_provider - INFO - 🔍 محاولة Yahoo Finance بالرمز: EURUSD=X
+2025-11-20 15:23:03,263 - data_provider - INFO - 🧪 اختبار مصدر البيانات: frankfurter
+2025-11-20 15:23:08,305 - data_provider - INFO - 🧪 اختبار مصدر البيانات: twelvedata
+2025-11-20 15:23:08,951 - data_provider - INFO - ✅ نجح Twelve Data لـ EURUSD
+2025-11-20 15:23:09,958 - data_provider - INFO - 🧪 اختبار مصدر البيانات: alphavantage
+2025-11-20 15:23:11,564 - data_provider - INFO - 🧪 نتائج اختبار المصادر: {'mt5': True, 'yfinance': False, 'frankfurter': False, 'twelvedata': True, 'alphavantage': False}
+2025-11-20 15:23:11,564 - data_provider - INFO - 🧪 حالة مصادر البيانات: {'mt5': True, 'yfinance': False, 'frankfurter': False, 'twelvedata': True, 'alphavantage': False}
+2025-11-20 15:23:11,564 - risk_management - INFO - تهيئة RiskManager برصيد: $10000.0
+2025-11-20 15:23:11,564 - advanced_analysis - INFO - ✅ تم تهيئة نظام التحليل المتقدم
+2025-11-20 15:23:11,564 - economic_calendar - INFO - ✅ تم تهيئة التقويم الاقتصادي
+2025-11-20 15:23:11,564 - session_manager - INFO - ✅ تم تهيئة مدير الجلسات
+2025-11-20 15:23:11,962 - telegram_bot - INFO - ✅ تم إعداد معالجات الأوامر
+2025-11-20 15:23:11,962 - telegram_bot - INFO - ✅ تم تهيئة TradingBot بنجاح
+2025-11-20 15:23:11,978 - telegram_bot - INFO - 🚀 بدء تشغيل بوت التليجرام...
+2025-11-20 15:23:12,394 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getMe "HTTP/1.1 200 OK"
+2025-11-20 15:23:12,479 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/deleteWebhook "HTTP/1.1 200 OK"
+2025-11-20 15:23:12,492 - telegram.ext.Application - INFO - Application started
+2025-11-20 15:23:12,733 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:23:22,837 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:23:32,918 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:23:42,997 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:23:53,070 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:24:03,170 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:24:13,266 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:24:23,330 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:24:33,413 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:24:43,534 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:24:59,707 - __main__ - INFO - بدء تشغيل نظام التداول الآلي
+2025-11-20 15:25:00,294 - telegram_bot - INFO - ✅ تم استيراد DataProvider بنجاح
+2025-11-20 15:25:00,294 - telegram_bot - INFO - 🤖 تهيئة بوت التداول...
+2025-11-20 15:25:00,549 - data_provider - INFO - ✅ pandas-ta متوفر للمؤشرات الفنية
+2025-11-20 15:25:00,549 - data_provider - INFO - ✅ MT5 متاح وجاهز للاستخدام
+2025-11-20 15:25:00,565 - data_provider - INFO - 🧪 اختبار مصدر البيانات: mt5
+2025-11-20 15:25:00,565 - data_provider - INFO - ✅ تم جلب 24 شمعة من MT5 لـ EURUSD
+2025-11-20 15:25:01,576 - data_provider - INFO - 🧪 اختبار مصدر البيانات: yfinance
+2025-11-20 15:25:01,576 - data_provider - INFO - 🔍 محاولة Yahoo Finance بالرمز: EURUSD=X
+2025-11-20 15:25:03,085 - data_provider - INFO - 🧪 اختبار مصدر البيانات: frankfurter
+2025-11-20 15:25:04,546 - data_provider - INFO - 🧪 اختبار مصدر البيانات: twelvedata
+2025-11-20 15:25:05,092 - data_provider - INFO - ✅ نجح Twelve Data لـ EURUSD
+2025-11-20 15:25:06,100 - data_provider - INFO - 🧪 اختبار مصدر البيانات: alphavantage
+2025-11-20 15:25:07,779 - data_provider - INFO - 🧪 نتائج اختبار المصادر: {'mt5': True, 'yfinance': False, 'frankfurter': False, 'twelvedata': True, 'alphavantage': False}
+2025-11-20 15:25:07,779 - data_provider - INFO - 🧪 حالة مصادر البيانات: {'mt5': True, 'yfinance': False, 'frankfurter': False, 'twelvedata': True, 'alphavantage': False}
+2025-11-20 15:25:07,779 - risk_management - INFO - تهيئة RiskManager برصيد: $10000.0
+2025-11-20 15:25:07,779 - advanced_analysis - INFO - ✅ تم تهيئة نظام التحليل المتقدم
+2025-11-20 15:25:07,783 - economic_calendar - INFO - ✅ تم تهيئة التقويم الاقتصادي
+2025-11-20 15:25:07,783 - session_manager - INFO - ✅ تم تهيئة مدير الجلسات
+2025-11-20 15:25:08,997 - telegram_bot - INFO - ✅ تم إعداد معالجات الأوامر
+2025-11-20 15:25:08,997 - telegram_bot - INFO - ✅ تم تهيئة TradingBot بنجاح
+2025-11-20 15:25:08,997 - telegram_bot - INFO - 🚀 بدء تشغيل بوت التليجرام...
+2025-11-20 15:25:09,357 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getMe "HTTP/1.1 200 OK"
+2025-11-20 15:25:09,464 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/deleteWebhook "HTTP/1.1 200 OK"
+2025-11-20 15:25:09,464 - telegram.ext.Application - INFO - Application started
+2025-11-20 15:25:19,822 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:25:30,033 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:25:37,354 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:25:37,766 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/sendMessage "HTTP/1.1 200 OK"
+2025-11-20 15:25:37,768 - telegram_bot - INFO - تم إرسال تقرير المخاطرة
+2025-11-20 15:25:47,924 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:25:48,548 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:25:58,684 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:26:08,841 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:26:18,943 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:26:29,042 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:26:30,669 - telegram.ext.Updater - ERROR - Error while getting Updates: httpx.RemoteProtocolError: Server disconnected without sending a response.
+2025-11-20 15:26:30,669 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_transports\default.py", line 66, in map_httpcore_exceptions
+    yield
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_transports\default.py", line 366, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\http_proxy.py", line 343, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\http11.py", line 136, in handle_async_request
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\http11.py", line 106, in handle_async_request
+    ) = await self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\http11.py", line 177, in _receive_response_headers
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\http11.py", line 231, in _receive_event
+    raise RemoteProtocolError(msg)
+httpcore.RemoteProtocolError: Server disconnected without sending a response.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_httpxrequest.py", line 268, in do_request
+    res = await self._client.request(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1530, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1617, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1645, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1682, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1719, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_transports\default.py", line 365, in handle_async_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_transports\default.py", line 83, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.RemoteProtocolError: Server disconnected without sending a response.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_updater.py", line 688, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_updater.py", line 384, in polling_action_cb
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_updater.py", line 373, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_extbot.py", line 558, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\_bot.py", line 525, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\_bot.py", line 3584, in get_updates
+    await self._post(
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\_bot.py", line 613, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_extbot.py", line 340, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\_bot.py", line 641, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 200, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 340, in _request_wrapper
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 330, in _request_wrapper
+    code, payload = await self.do_request(
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_httpxrequest.py", line 292, in do_request
+    raise NetworkError(f"httpx.{err.__class__.__name__}: {err}") from err
+telegram.error.NetworkError: httpx.RemoteProtocolError: Server disconnected without sending a response.
+2025-11-20 15:26:33,678 - telegram.ext.Updater - ERROR - Error while getting Updates: httpx.ConnectError: All connection attempts failed
+2025-11-20 15:26:33,679 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_transports\default.py", line 66, in map_httpcore_exceptions
+    yield
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_transports\default.py", line 366, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\http_proxy.py", line 288, in handle_async_request
+    connect_response = await self._connection.handle_async_request(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\connection.py", line 101, in handle_async_request
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\connection.py", line 78, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\connection.py", line 124, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_backends\auto.py", line 31, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_backends\anyio.py", line 113, in connect_tcp
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_httpxrequest.py", line 268, in do_request
+    res = await self._client.request(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1530, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1617, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1645, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1682, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1719, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_transports\default.py", line 365, in handle_async_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_transports\default.py", line 83, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_updater.py", line 688, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_updater.py", line 384, in polling_action_cb
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_updater.py", line 373, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_extbot.py", line 558, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\_bot.py", line 525, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\_bot.py", line 3584, in get_updates
+    await self._post(
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\_bot.py", line 613, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_extbot.py", line 340, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\_bot.py", line 641, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 200, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 340, in _request_wrapper
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 330, in _request_wrapper
+    code, payload = await self.do_request(
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_httpxrequest.py", line 292, in do_request
+    raise NetworkError(f"httpx.{err.__class__.__name__}: {err}") from err
+telegram.error.NetworkError: httpx.ConnectError: All connection attempts failed
+2025-11-20 15:26:37,205 - telegram.ext.Updater - ERROR - Error while getting Updates: httpx.ConnectError: All connection attempts failed
+2025-11-20 15:26:37,205 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_transports\default.py", line 66, in map_httpcore_exceptions
+    yield
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_transports\default.py", line 366, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\http_proxy.py", line 288, in handle_async_request
+    connect_response = await self._connection.handle_async_request(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\connection.py", line 101, in handle_async_request
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\connection.py", line 78, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\connection.py", line 124, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_backends\auto.py", line 31, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_backends\anyio.py", line 113, in connect_tcp
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_httpxrequest.py", line 268, in do_request
+    res = await self._client.request(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1530, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1617, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1645, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1682, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1719, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_transports\default.py", line 365, in handle_async_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_transports\default.py", line 83, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_updater.py", line 688, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_updater.py", line 384, in polling_action_cb
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_updater.py", line 373, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_extbot.py", line 558, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\_bot.py", line 525, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\_bot.py", line 3584, in get_updates
+    await self._post(
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\_bot.py", line 613, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_extbot.py", line 340, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\_bot.py", line 641, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 200, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 340, in _request_wrapper
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 330, in _request_wrapper
+    code, payload = await self.do_request(
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_httpxrequest.py", line 292, in do_request
+    raise NetworkError(f"httpx.{err.__class__.__name__}: {err}") from err
+telegram.error.NetworkError: httpx.ConnectError: All connection attempts failed
+2025-11-20 15:26:41,482 - telegram.ext.Updater - ERROR - Error while getting Updates: httpx.ConnectError: All connection attempts failed
+2025-11-20 15:26:41,482 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_transports\default.py", line 66, in map_httpcore_exceptions
+    yield
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_transports\default.py", line 366, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\http_proxy.py", line 288, in handle_async_request
+    connect_response = await self._connection.handle_async_request(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\connection.py", line 101, in handle_async_request
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\connection.py", line 78, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\connection.py", line 124, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_backends\auto.py", line 31, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_backends\anyio.py", line 113, in connect_tcp
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_httpxrequest.py", line 268, in do_request
+    res = await self._client.request(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1530, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1617, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1645, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1682, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1719, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_transports\default.py", line 365, in handle_async_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_transports\default.py", line 83, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_updater.py", line 688, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_updater.py", line 384, in polling_action_cb
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_updater.py", line 373, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_extbot.py", line 558, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\_bot.py", line 525, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\_bot.py", line 3584, in get_updates
+    await self._post(
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\_bot.py", line 613, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_extbot.py", line 340, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\_bot.py", line 641, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 200, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 340, in _request_wrapper
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 330, in _request_wrapper
+    code, payload = await self.do_request(
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_httpxrequest.py", line 292, in do_request
+    raise NetworkError(f"httpx.{err.__class__.__name__}: {err}") from err
+telegram.error.NetworkError: httpx.ConnectError: All connection attempts failed
+2025-11-20 15:26:46,911 - telegram.ext.Updater - ERROR - Error while getting Updates: httpx.ConnectError: All connection attempts failed
+2025-11-20 15:26:46,912 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_transports\default.py", line 66, in map_httpcore_exceptions
+    yield
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_transports\default.py", line 366, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\http_proxy.py", line 288, in handle_async_request
+    connect_response = await self._connection.handle_async_request(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\connection.py", line 101, in handle_async_request
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\connection.py", line 78, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\connection.py", line 124, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_backends\auto.py", line 31, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_backends\anyio.py", line 113, in connect_tcp
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_httpxrequest.py", line 268, in do_request
+    res = await self._client.request(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1530, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1617, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1645, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1682, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1719, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_transports\default.py", line 365, in handle_async_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_transports\default.py", line 83, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_updater.py", line 688, in _network_loop_retry
+    if not await action_cb():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_updater.py", line 384, in polling_action_cb
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_updater.py", line 373, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_extbot.py", line 558, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\_bot.py", line 525, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\_bot.py", line 3584, in get_updates
+    await self._post(
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\_bot.py", line 613, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_extbot.py", line 340, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\_bot.py", line 641, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 200, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 340, in _request_wrapper
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 330, in _request_wrapper
+    code, payload = await self.do_request(
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_httpxrequest.py", line 292, in do_request
+    raise NetworkError(f"httpx.{err.__class__.__name__}: {err}") from err
+telegram.error.NetworkError: httpx.ConnectError: All connection attempts failed
+2025-11-20 15:26:52,087 - telegram.ext.Updater - ERROR - Error while calling `get_updates` one more time to mark all fetched updates as read: %s. Suppressing error to ensure graceful shutdown. When polling for updates is restarted, updates may be fetched again. Please adjust timeouts via `ApplicationBuilder` or the parameter `get_updates_request` of `Bot`.
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_transports\default.py", line 66, in map_httpcore_exceptions
+    yield
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_transports\default.py", line 366, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\http_proxy.py", line 288, in handle_async_request
+    connect_response = await self._connection.handle_async_request(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\connection.py", line 101, in handle_async_request
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\connection.py", line 78, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_async\connection.py", line 124, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_backends\auto.py", line 31, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_backends\anyio.py", line 113, in connect_tcp
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_httpxrequest.py", line 268, in do_request
+    res = await self._client.request(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1530, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1617, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1645, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1682, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_client.py", line 1719, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_transports\default.py", line 365, in handle_async_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Program Files\Python312\Lib\site-packages\httpx\_transports\default.py", line 83, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_updater.py", line 433, in _get_updates_cleanup
+    await self.bot.get_updates(
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_extbot.py", line 558, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\_bot.py", line 525, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\_bot.py", line 3584, in get_updates
+    await self._post(
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\_bot.py", line 613, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\ext\_extbot.py", line 340, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\_bot.py", line 641, in _do_post
+    return await request.post(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 200, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 340, in _request_wrapper
+    raise exc
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 330, in _request_wrapper
+    code, payload = await self.do_request(
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\site-packages\telegram\request\_httpxrequest.py", line 292, in do_request
+    raise NetworkError(f"httpx.{err.__class__.__name__}: {err}") from err
+telegram.error.NetworkError: httpx.ConnectError: All connection attempts failed
+2025-11-20 15:26:52,089 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-11-20 15:26:52,089 - telegram.ext.Application - INFO - Application.stop() complete
+2025-11-20 15:27:22,467 - __main__ - INFO - بدء تشغيل نظام التداول الآلي
+2025-11-20 15:27:23,034 - telegram_bot - INFO - ✅ تم استيراد DataProvider بنجاح
+2025-11-20 15:27:23,034 - telegram_bot - INFO - 🤖 تهيئة بوت التداول...
+2025-11-20 15:27:23,383 - data_provider - INFO - ✅ pandas-ta متوفر للمؤشرات الفنية
+2025-11-20 15:27:23,398 - data_provider - INFO - ✅ MT5 متاح وجاهز للاستخدام
+2025-11-20 15:27:23,398 - data_provider - INFO - 🧪 اختبار مصدر البيانات: mt5
+2025-11-20 15:27:23,398 - data_provider - INFO - ✅ تم جلب 24 شمعة من MT5 لـ EURUSD
+2025-11-20 15:27:24,415 - data_provider - INFO - 🧪 اختبار مصدر البيانات: yfinance
+2025-11-20 15:27:24,415 - data_provider - INFO - 🔍 محاولة Yahoo Finance بالرمز: EURUSD=X
+2025-11-20 15:27:36,534 - data_provider - INFO - 🧪 اختبار مصدر البيانات: frankfurter
+2025-11-20 15:27:37,956 - data_provider - INFO - 🧪 اختبار مصدر البيانات: twelvedata
+2025-11-20 15:27:38,416 - data_provider - INFO - ✅ نجح Twelve Data لـ EURUSD
+2025-11-20 15:27:39,434 - data_provider - INFO - 🧪 اختبار مصدر البيانات: alphavantage
+2025-11-20 15:27:40,930 - data_provider - INFO - 🧪 نتائج اختبار المصادر: {'mt5': True, 'yfinance': False, 'frankfurter': False, 'twelvedata': True, 'alphavantage': False}
+2025-11-20 15:27:40,930 - data_provider - INFO - 🧪 حالة مصادر البيانات: {'mt5': True, 'yfinance': False, 'frankfurter': False, 'twelvedata': True, 'alphavantage': False}
+2025-11-20 15:27:40,930 - risk_management - INFO - تهيئة RiskManager برصيد: $10000.0
+2025-11-20 15:27:40,930 - advanced_analysis - INFO - ✅ تم تهيئة نظام التحليل المتقدم
+2025-11-20 15:27:40,930 - economic_calendar - INFO - ✅ تم تهيئة التقويم الاقتصادي
+2025-11-20 15:27:40,930 - session_manager - INFO - ✅ تم تهيئة مدير الجلسات
+2025-11-20 15:27:41,341 - telegram_bot - INFO - ✅ تم إعداد معالجات الأوامر
+2025-11-20 15:27:41,341 - telegram_bot - INFO - ✅ تم تهيئة TradingBot بنجاح
+2025-11-20 15:27:41,341 - telegram_bot - INFO - 🚀 بدء تشغيل بوت التليجرام...
+2025-11-20 15:27:41,648 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getMe "HTTP/1.1 200 OK"
+2025-11-20 15:27:41,744 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/deleteWebhook "HTTP/1.1 200 OK"
+2025-11-20 15:27:41,744 - telegram.ext.Application - INFO - Application started
+2025-11-20 15:27:42,124 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:27:42,262 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/sendMessage "HTTP/1.1 200 OK"
+2025-11-20 15:27:42,262 - data_provider - INFO - 🔍 محاولة جلب بيانات EURUSD من mt5 - 3mo/4h
+2025-11-20 15:27:42,421 - data_provider - INFO - ✅ تم جلب 2160 شمعة من MT5 لـ EURUSD
+2025-11-20 15:27:42,426 - data_provider - INFO - ✅ نجح جلب بيانات EURUSD من mt5
+2025-11-20 15:27:42,455 - data_provider - WARNING - ⚠️ خطأ في المؤشرات الفنية: 'BBU_20_2.0'
+2025-11-20 15:27:42,455 - advanced_analysis - INFO - 🎯 إشارة لـ EURUSD: انتظار (ثقة: 66.66666666666667%)
+2025-11-20 15:27:42,455 - data_provider - INFO - 🔍 محاولة جلب بيانات GBPUSD من mt5 - 3mo/4h
+2025-11-20 15:27:42,626 - data_provider - INFO - ✅ تم جلب 2160 شمعة من MT5 لـ GBPUSD
+2025-11-20 15:27:42,630 - data_provider - INFO - ✅ نجح جلب بيانات GBPUSD من mt5
+2025-11-20 15:27:42,630 - data_provider - WARNING - ⚠️ خطأ في المؤشرات الفنية: 'BBU_20_2.0'
+2025-11-20 15:27:42,637 - advanced_analysis - INFO - 🎯 إشارة لـ GBPUSD: انتظار (ثقة: 66.66666666666667%)
+2025-11-20 15:27:42,637 - data_provider - INFO - 🔍 محاولة جلب بيانات USDJPY من mt5 - 3mo/4h
+2025-11-20 15:27:42,800 - data_provider - INFO - ✅ تم جلب 2160 شمعة من MT5 لـ USDJPY
+2025-11-20 15:27:42,800 - data_provider - INFO - ✅ نجح جلب بيانات USDJPY من mt5
+2025-11-20 15:27:42,810 - data_provider - WARNING - ⚠️ خطأ في المؤشرات الفنية: 'BBU_20_2.0'
+2025-11-20 15:27:42,813 - advanced_analysis - INFO - 🎯 إشارة لـ USDJPY: بيع (ثقة: 77.5%)
+2025-11-20 15:27:42,813 - data_provider - INFO - 🔍 محاولة جلب بيانات USDCHF من mt5 - 3mo/4h
+2025-11-20 15:27:42,974 - data_provider - INFO - ✅ تم جلب 2160 شمعة من MT5 لـ USDCHF
+2025-11-20 15:27:42,976 - data_provider - INFO - ✅ نجح جلب بيانات USDCHF من mt5
+2025-11-20 15:27:42,976 - data_provider - WARNING - ⚠️ خطأ في المؤشرات الفنية: 'BBU_20_2.0'
+2025-11-20 15:27:42,976 - advanced_analysis - INFO - 🎯 إشارة لـ USDCHF: بيع (ثقة: 77.5%)
+2025-11-20 15:27:42,987 - data_provider - INFO - 🔍 محاولة جلب بيانات USDCAD من mt5 - 3mo/4h
+2025-11-20 15:27:47,241 - data_provider - INFO - ✅ تم جلب 2160 شمعة من MT5 لـ USDCAD
+2025-11-20 15:27:47,241 - data_provider - INFO - ✅ نجح جلب بيانات USDCAD من mt5
+2025-11-20 15:27:47,241 - data_provider - WARNING - ⚠️ خطأ في المؤشرات الفنية: 'BBU_20_2.0'
+2025-11-20 15:27:47,241 - advanced_analysis - INFO - 🎯 إشارة لـ USDCAD: شراء (ثقة: 75.0%)
+2025-11-20 15:27:47,241 - data_provider - INFO - 🔍 محاولة جلب بيانات AUDUSD من mt5 - 3mo/4h
+2025-11-20 15:27:52,397 - data_provider - INFO - ✅ تم جلب 2160 شمعة من MT5 لـ AUDUSD
+2025-11-20 15:27:52,397 - data_provider - INFO - ✅ نجح جلب بيانات AUDUSD من mt5
+2025-11-20 15:27:52,397 - data_provider - WARNING - ⚠️ خطأ في المؤشرات الفنية: 'BBU_20_2.0'
+2025-11-20 15:27:52,397 - advanced_analysis - INFO - 🎯 إشارة لـ AUDUSD: انتظار (ثقة: 66.66666666666667%)
+2025-11-20 15:27:52,397 - data_provider - INFO - 🔍 محاولة جلب بيانات XAUUSD من mt5 - 3mo/4h
+2025-11-20 15:28:01,732 - data_provider - INFO - ✅ تم جلب 2160 شمعة من MT5 لـ XAUUSD
+2025-11-20 15:28:01,732 - data_provider - INFO - ✅ نجح جلب بيانات XAUUSD من mt5
+2025-11-20 15:28:01,751 - data_provider - WARNING - ⚠️ خطأ في المؤشرات الفنية: 'BBU_20_2.0'
+2025-11-20 15:28:01,752 - data_provider - INFO - 🔍 محاولة جلب بيانات USOIL من mt5 - 3mo/4h
+2025-11-20 15:28:01,761 - data_provider - WARNING - ❌ لا توجد بيانات من MT5 لـ USOIL
+2025-11-20 15:28:02,063 - data_provider - INFO - 🔍 محاولة جلب بيانات USOIL من twelvedata - 3mo/4h
+2025-11-20 15:28:02,364 - data_provider - WARNING - 🔄 استخدام البيانات الافتراضية الذكية لـ USOIL
+2025-11-20 15:28:02,383 - data_provider - INFO - 📊 استخدام بيانات افتراضية ذكية لـ USOIL (500 شمعة)
+2025-11-20 15:28:02,398 - data_provider - WARNING - ⚠️ خطأ في المؤشرات الفنية: 'BBU_20_2.0'
+2025-11-20 15:28:02,401 - advanced_analysis - INFO - 🎯 إشارة لـ USOIL: انتظار (ثقة: 66.66666666666667%)
+2025-11-20 15:28:02,689 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/sendMessage "HTTP/1.1 200 OK"
+2025-11-20 15:28:02,689 - telegram_bot - INFO - تم إرسال إشارات التداول
+2025-11-20 15:28:12,650 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:28:22,743 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:28:32,837 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:28:42,893 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:28:52,969 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:29:03,056 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:29:13,150 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:29:23,329 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:29:33,437 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:29:39,369 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:30:07,646 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:30:07,731 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:30:17,432 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:30:17,432 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-11-20 15:30:17,432 - telegram.ext.Application - INFO - Application.stop() complete
+2025-11-20 15:30:19,862 - __main__ - INFO - بدء تشغيل نظام التداول الآلي
+2025-11-20 15:30:20,430 - telegram_bot - INFO - ✅ تم استيراد DataProvider بنجاح
+2025-11-20 15:30:20,430 - telegram_bot - INFO - 🤖 تهيئة بوت التداول...
+2025-11-20 15:30:20,770 - data_provider - INFO - ✅ pandas-ta متوفر للمؤشرات الفنية
+2025-11-20 15:30:20,785 - data_provider - INFO - ✅ MT5 متاح وجاهز للاستخدام
+2025-11-20 15:30:20,785 - data_provider - INFO - 🧪 اختبار مصدر البيانات: mt5
+2025-11-20 15:30:20,785 - data_provider - INFO - ✅ تم جلب 24 شمعة من MT5 لـ EURUSD
+2025-11-20 15:30:21,804 - data_provider - INFO - 🧪 اختبار مصدر البيانات: yfinance
+2025-11-20 15:30:21,804 - data_provider - INFO - 🔍 محاولة Yahoo Finance بالرمز: EURUSD=X
+2025-11-20 15:30:23,352 - data_provider - INFO - 🧪 اختبار مصدر البيانات: frankfurter
+2025-11-20 15:30:24,869 - data_provider - INFO - 🧪 اختبار مصدر البيانات: twelvedata
+2025-11-20 15:30:25,444 - data_provider - INFO - ✅ نجح Twelve Data لـ EURUSD
+2025-11-20 15:30:26,460 - data_provider - INFO - 🧪 اختبار مصدر البيانات: alphavantage
+2025-11-20 15:30:28,017 - data_provider - INFO - 🧪 نتائج اختبار المصادر: {'mt5': True, 'yfinance': False, 'frankfurter': False, 'twelvedata': True, 'alphavantage': False}
+2025-11-20 15:30:28,017 - data_provider - INFO - 🧪 حالة مصادر البيانات: {'mt5': True, 'yfinance': False, 'frankfurter': False, 'twelvedata': True, 'alphavantage': False}
+2025-11-20 15:30:28,019 - risk_management - INFO - تهيئة RiskManager برصيد: $10000.0
+2025-11-20 15:30:28,019 - advanced_analysis - INFO - ✅ تم تهيئة نظام التحليل المتقدم
+2025-11-20 15:30:28,019 - economic_calendar - INFO - ✅ تم تهيئة التقويم الاقتصادي
+2025-11-20 15:30:28,019 - session_manager - INFO - ✅ تم تهيئة مدير الجلسات
+2025-11-20 15:30:28,429 - telegram_bot - INFO - ✅ تم إعداد معالجات الأوامر
+2025-11-20 15:30:28,429 - telegram_bot - INFO - ✅ تم تهيئة TradingBot بنجاح
+2025-11-20 15:30:28,431 - telegram_bot - INFO - 🚀 بدء تشغيل بوت التليجرام...
+2025-11-20 15:30:28,652 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getMe "HTTP/1.1 200 OK"
+2025-11-20 15:30:28,733 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/deleteWebhook "HTTP/1.1 200 OK"
+2025-11-20 15:30:28,749 - telegram.ext.Application - INFO - Application started
+2025-11-20 15:30:38,996 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:30:46,553 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:30:46,886 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/sendMessage "HTTP/1.1 200 OK"
+2025-11-20 15:30:46,886 - telegram_bot - INFO - تم ترحيب المستخدم 8038054107
+2025-11-20 15:30:51,472 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:30:51,600 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/sendMessage "HTTP/1.1 200 OK"
+2025-11-20 15:30:51,600 - telegram_bot - INFO - تم إرسال معلومات الجلسة
+2025-11-20 15:30:56,912 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:31:07,006 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:31:17,091 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:31:26,730 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:31:26,730 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-11-20 15:31:26,730 - telegram.ext.Application - INFO - Application.stop() complete
+2025-11-20 15:31:28,946 - __main__ - INFO - بدء تشغيل نظام التداول الآلي
+2025-11-20 15:31:29,610 - telegram_bot - INFO - ✅ تم استيراد DataProvider بنجاح
+2025-11-20 15:31:29,610 - telegram_bot - INFO - 🤖 تهيئة بوت التداول...
+2025-11-20 15:31:29,924 - data_provider - INFO - ✅ pandas-ta متوفر للمؤشرات الفنية
+2025-11-20 15:31:29,927 - data_provider - INFO - ✅ MT5 متاح وجاهز للاستخدام
+2025-11-20 15:31:29,927 - data_provider - INFO - 🧪 اختبار مصدر البيانات: mt5
+2025-11-20 15:31:29,937 - data_provider - INFO - ✅ تم جلب 24 شمعة من MT5 لـ EURUSD
+2025-11-20 15:31:30,946 - data_provider - INFO - 🧪 اختبار مصدر البيانات: yfinance
+2025-11-20 15:31:30,946 - data_provider - INFO - 🔍 محاولة Yahoo Finance بالرمز: EURUSD=X
+2025-11-20 15:31:32,510 - data_provider - INFO - 🧪 اختبار مصدر البيانات: frankfurter
+2025-11-20 15:31:33,897 - data_provider - INFO - 🧪 اختبار مصدر البيانات: twelvedata
+2025-11-20 15:31:34,367 - data_provider - INFO - ✅ نجح Twelve Data لـ EURUSD
+2025-11-20 15:31:35,386 - data_provider - INFO - 🧪 اختبار مصدر البيانات: alphavantage
+2025-11-20 15:31:36,855 - data_provider - INFO - 🧪 نتائج اختبار المصادر: {'mt5': True, 'yfinance': False, 'frankfurter': False, 'twelvedata': True, 'alphavantage': False}
+2025-11-20 15:31:36,855 - data_provider - INFO - 🧪 حالة مصادر البيانات: {'mt5': True, 'yfinance': False, 'frankfurter': False, 'twelvedata': True, 'alphavantage': False}
+2025-11-20 15:31:36,855 - risk_management - INFO - تهيئة RiskManager برصيد: $10000.0
+2025-11-20 15:31:36,855 - advanced_analysis - INFO - ✅ تم تهيئة نظام التحليل المتقدم
+2025-11-20 15:31:36,855 - economic_calendar - INFO - ✅ تم تهيئة التقويم الاقتصادي
+2025-11-20 15:31:36,855 - session_manager - INFO - ✅ تم تهيئة مدير الجلسات
+2025-11-20 15:31:37,258 - telegram_bot - INFO - ✅ تم إعداد معالجات الأوامر
+2025-11-20 15:31:37,258 - telegram_bot - INFO - ✅ تم تهيئة TradingBot بنجاح
+2025-11-20 15:31:37,258 - telegram_bot - INFO - 🚀 بدء تشغيل بوت التليجرام...
+2025-11-20 15:31:37,514 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getMe "HTTP/1.1 200 OK"
+2025-11-20 15:31:37,597 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/deleteWebhook "HTTP/1.1 200 OK"
+2025-11-20 15:31:37,607 - telegram.ext.Application - INFO - Application started
+2025-11-20 15:31:37,846 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:31:37,939 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/sendMessage "HTTP/1.1 200 OK"
+2025-11-20 15:31:37,939 - data_provider - INFO - 🔍 محاولة جلب بيانات EURUSD من mt5 - 3mo/4h
+2025-11-20 15:31:37,955 - data_provider - INFO - ✅ تم جلب 2160 شمعة من MT5 لـ EURUSD
+2025-11-20 15:31:37,955 - data_provider - INFO - ✅ نجح جلب بيانات EURUSD من mt5
+2025-11-20 15:31:37,955 - data_provider - WARNING - ⚠️ خطأ في المؤشرات الفنية: 'BBU_20_2.0'
+2025-11-20 15:31:37,971 - advanced_analysis - INFO - 🎯 إشارة لـ EURUSD: انتظار (ثقة: 66.66666666666667%)
+2025-11-20 15:31:38,098 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/sendMessage "HTTP/1.1 200 OK"
+2025-11-20 15:31:38,098 - telegram_bot - INFO - تم إرسال تحليل EURUSD
+2025-11-20 15:31:47,915 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:31:58,019 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:32:08,112 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:32:18,217 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:32:28,313 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:32:38,373 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:32:48,451 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:32:58,249 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:32:58,249 - data_provider - INFO - ✅ تم مسح التخزين المؤقت
+2025-11-20 15:32:58,563 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/sendMessage "HTTP/1.1 200 OK"
+2025-11-20 15:32:58,563 - telegram_bot - INFO - تم مسح الذاكرة المؤقتة
+2025-11-20 15:33:04,459 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:33:14,547 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:33:24,647 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:33:34,737 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:33:44,819 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:33:54,900 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:34:04,977 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:34:15,045 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:34:25,158 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:34:35,240 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:34:45,315 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:34:55,420 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:35:05,553 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:35:15,708 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:35:25,766 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:35:35,874 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:35:45,963 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:35:56,054 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:36:06,138 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:36:16,225 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:36:26,308 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:36:36,394 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:36:46,489 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:36:56,590 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:37:06,706 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:37:16,789 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:37:26,883 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:37:36,958 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:37:47,064 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:37:57,157 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:38:07,263 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:38:17,351 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:38:27,448 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:38:37,527 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:38:47,626 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:38:57,774 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:39:07,894 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:39:18,000 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:39:28,079 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:39:38,251 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:39:48,410 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:39:58,476 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:40:08,560 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:40:18,679 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:40:28,797 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:40:38,889 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:40:49,015 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:40:59,213 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:41:09,391 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:41:19,483 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:41:29,606 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:41:39,724 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:41:49,820 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:41:59,901 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:42:09,997 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:42:20,065 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:42:30,139 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:42:40,214 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:42:50,273 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:43:00,360 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:43:10,445 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:43:20,524 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:43:30,682 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:43:40,807 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:43:50,893 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:44:00,992 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:44:11,209 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:44:21,367 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:44:31,488 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:44:41,562 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:44:51,650 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:45:01,725 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:45:11,813 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:45:21,937 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:45:32,048 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:45:42,144 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:45:52,263 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:46:02,338 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:46:12,425 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:46:22,492 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:46:32,622 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:46:42,750 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:46:54,127 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:47:04,225 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:47:14,296 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:47:28,622 - __main__ - INFO - بدء تشغيل نظام التداول الآلي
+2025-11-20 15:47:29,209 - telegram_bot - INFO - ✅ تم استيراد DataProvider بنجاح
+2025-11-20 15:47:29,209 - telegram_bot - INFO - 🤖 تهيئة بوت التداول السريع...
+2025-11-20 15:47:29,577 - data_provider - INFO - ✅ pandas-ta متوفر للمؤشرات الفنية
+2025-11-20 15:47:29,577 - data_provider - INFO - ✅ MT5 متاح وجاهز للاستخدام
+2025-11-20 15:47:29,577 - data_provider - INFO - 🧪 اختبار مصدر البيانات: mt5
+2025-11-20 15:47:29,591 - data_provider - INFO - ✅ تم جلب 24 شمعة من MT5 لـ EURUSD
+2025-11-20 15:47:29,704 - data_provider - INFO - 🧪 اختبار مصدر البيانات: twelvedata
+2025-11-20 15:47:30,341 - data_provider - INFO - ✅ نجح Twelve Data لـ EURUSD
+2025-11-20 15:47:30,452 - data_provider - INFO - 🧪 نتائج اختبار المصادر: {'mt5': True, 'twelvedata': True}
+2025-11-20 15:47:30,453 - data_provider - INFO - 🧪 حالة مصادر البيانات: {'mt5': True, 'twelvedata': True}
+2025-11-20 15:47:30,453 - telegram_bot - INFO - 🔄 تحميل البيانات المسبق في الخلفية...
+2025-11-20 15:47:30,453 - risk_management - INFO - تهيئة RiskManager برصيد: $10000.0
+2025-11-20 15:47:30,464 - data_provider - INFO - ✅ تم جلب 24 شمعة من MT5 لـ EURUSD
+2025-11-20 15:47:30,468 - advanced_analysis - INFO - ✅ تم تهيئة نظام التحليل المتقدم
+2025-11-20 15:47:30,468 - data_provider - INFO - ✅ نجح جلب بيانات EURUSD من mt5
+2025-11-20 15:47:30,468 - economic_calendar - INFO - ✅ تم تهيئة التقويم الاقتصادي
+2025-11-20 15:47:30,468 - session_manager - INFO - ✅ تم تهيئة مدير الجلسات
+2025-11-20 15:47:30,468 - data_provider - WARNING - ⚠️ خطأ في المؤشرات الفنية: 'BBU_20_2.0'
+2025-11-20 15:47:30,486 - data_provider - INFO - ✅ تم جلب 24 شمعة من MT5 لـ GBPUSD
+2025-11-20 15:47:30,500 - data_provider - INFO - ✅ نجح جلب بيانات GBPUSD من mt5
+2025-11-20 15:47:30,500 - data_provider - WARNING - ⚠️ خطأ في المؤشرات الفنية: 'BBU_20_2.0'
+2025-11-20 15:47:30,500 - data_provider - INFO - ✅ تم جلب 24 شمعة من MT5 لـ USDJPY
+2025-11-20 15:47:30,518 - data_provider - INFO - ✅ نجح جلب بيانات USDJPY من mt5
+2025-11-20 15:47:30,520 - data_provider - WARNING - ⚠️ خطأ في المؤشرات الفنية: 'BBU_20_2.0'
+2025-11-20 15:47:30,520 - telegram_bot - INFO - ✅ اكتمل التحميل المسبق
+2025-11-20 15:47:30,896 - telegram_bot - INFO - ✅ تم إعداد معالجات الأوامر
+2025-11-20 15:47:30,896 - telegram_bot - INFO - ✅ تم تهيئة TradingBot بنجاح
+2025-11-20 15:47:30,898 - telegram_bot - INFO - 🚀 بدء تشغيل بوت التليجرام السريع...
+2025-11-20 15:47:31,263 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getMe "HTTP/1.1 200 OK"
+2025-11-20 15:47:31,376 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/deleteWebhook "HTTP/1.1 200 OK"
+2025-11-20 15:47:31,376 - telegram.ext.Application - INFO - Application started
+2025-11-20 15:47:41,668 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:47:44,792 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:47:45,048 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/sendMessage "HTTP/1.1 200 OK"
+2025-11-20 15:47:45,050 - telegram_bot - INFO - تم ترحيب المستخدم 8038054107
+2025-11-20 15:47:48,425 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:47:58,568 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:48:08,698 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:48:18,778 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:48:28,861 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:48:37,751 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:48:37,751 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-11-20 15:48:37,751 - telegram.ext.Application - INFO - Application.stop() complete
+2025-11-20 15:48:39,996 - __main__ - INFO - بدء تشغيل نظام التداول الآلي
+2025-11-20 15:48:40,587 - telegram_bot - INFO - ✅ تم استيراد DataProvider بنجاح
+2025-11-20 15:48:40,587 - telegram_bot - INFO - 🤖 تهيئة بوت التداول السريع...
+2025-11-20 15:48:40,851 - data_provider - INFO - ✅ pandas-ta متوفر للمؤشرات الفنية
+2025-11-20 15:48:40,864 - data_provider - INFO - ✅ MT5 متاح وجاهز للاستخدام
+2025-11-20 15:48:40,864 - data_provider - INFO - 🧪 اختبار مصدر البيانات: mt5
+2025-11-20 15:48:40,867 - data_provider - INFO - ✅ تم جلب 24 شمعة من MT5 لـ EURUSD
+2025-11-20 15:48:40,978 - data_provider - INFO - 🧪 اختبار مصدر البيانات: twelvedata
+2025-11-20 15:48:41,476 - data_provider - INFO - ✅ نجح Twelve Data لـ EURUSD
+2025-11-20 15:48:41,593 - data_provider - INFO - 🧪 نتائج اختبار المصادر: {'mt5': True, 'twelvedata': True}
+2025-11-20 15:48:41,593 - data_provider - INFO - 🧪 حالة مصادر البيانات: {'mt5': True, 'twelvedata': True}
+2025-11-20 15:48:41,593 - telegram_bot - INFO - 🔄 تحميل البيانات المسبق في الخلفية...
+2025-11-20 15:48:41,593 - risk_management - INFO - تهيئة RiskManager برصيد: $10000.0
+2025-11-20 15:48:41,602 - data_provider - INFO - ✅ تم جلب 24 شمعة من MT5 لـ EURUSD
+2025-11-20 15:48:41,602 - advanced_analysis - INFO - ✅ تم تهيئة نظام التحليل المتقدم
+2025-11-20 15:48:41,602 - data_provider - INFO - ✅ نجح جلب بيانات EURUSD من mt5
+2025-11-20 15:48:41,602 - economic_calendar - INFO - ✅ تم تهيئة التقويم الاقتصادي
+2025-11-20 15:48:41,602 - session_manager - INFO - ✅ تم تهيئة مدير الجلسات
+2025-11-20 15:48:41,602 - data_provider - WARNING - ⚠️ خطأ في المؤشرات الفنية: 'BBU_20_2.0'
+2025-11-20 15:48:41,618 - data_provider - INFO - ✅ تم جلب 24 شمعة من MT5 لـ GBPUSD
+2025-11-20 15:48:41,618 - data_provider - INFO - ✅ نجح جلب بيانات GBPUSD من mt5
+2025-11-20 15:48:41,618 - data_provider - WARNING - ⚠️ خطأ في المؤشرات الفنية: 'BBU_20_2.0'
+2025-11-20 15:48:41,637 - data_provider - INFO - ✅ تم جلب 24 شمعة من MT5 لـ USDJPY
+2025-11-20 15:48:41,643 - data_provider - INFO - ✅ نجح جلب بيانات USDJPY من mt5
+2025-11-20 15:48:41,645 - data_provider - WARNING - ⚠️ خطأ في المؤشرات الفنية: 'BBU_20_2.0'
+2025-11-20 15:48:41,645 - telegram_bot - INFO - ✅ اكتمل التحميل المسبق
+2025-11-20 15:48:42,019 - telegram_bot - INFO - ✅ تم إعداد معالجات الأوامر
+2025-11-20 15:48:42,019 - telegram_bot - INFO - ✅ تم تهيئة TradingBot بنجاح
+2025-11-20 15:48:42,019 - telegram_bot - INFO - 🚀 بدء تشغيل بوت التليجرام السريع...
+2025-11-20 15:48:42,420 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getMe "HTTP/1.1 200 OK"
+2025-11-20 15:48:42,498 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/deleteWebhook "HTTP/1.1 200 OK"
+2025-11-20 15:48:42,498 - telegram.ext.Application - INFO - Application started
+2025-11-20 15:48:46,202 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:48:46,315 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/sendMessage "HTTP/1.1 200 OK"
+2025-11-20 15:48:46,315 - telegram_bot - INFO - تم إرسال معلومات الجلسة
+2025-11-20 15:48:51,392 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:49:01,463 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:49:11,546 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:49:21,617 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:49:31,685 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:49:41,746 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:49:51,828 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:50:01,896 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:50:11,953 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:50:22,051 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:50:32,115 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:50:42,205 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:50:52,284 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:51:02,401 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:51:12,476 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:51:22,545 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:51:30,097 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:51:30,097 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-11-20 15:51:30,097 - telegram.ext.Application - INFO - Application.stop() complete
+2025-11-20 15:51:32,196 - __main__ - INFO - بدء تشغيل نظام التداول الآلي
+2025-11-20 15:51:32,796 - telegram_bot - INFO - ✅ تم استيراد DataProvider بنجاح
+2025-11-20 15:51:32,796 - telegram_bot - INFO - 🤖 تهيئة بوت التداول السريع...
+2025-11-20 15:51:33,147 - data_provider - INFO - ✅ pandas-ta متوفر للمؤشرات الفنية
+2025-11-20 15:51:33,147 - data_provider - INFO - ✅ MT5 متاح وجاهز للاستخدام
+2025-11-20 15:51:33,147 - data_provider - INFO - 🧪 اختبار مصدر البيانات: mt5
+2025-11-20 15:51:33,163 - data_provider - INFO - ✅ تم جلب 24 شمعة من MT5 لـ EURUSD
+2025-11-20 15:51:33,270 - data_provider - INFO - 🧪 اختبار مصدر البيانات: twelvedata
+2025-11-20 15:51:33,783 - data_provider - INFO - ✅ نجح Twelve Data لـ EURUSD
+2025-11-20 15:51:33,895 - data_provider - INFO - 🧪 نتائج اختبار المصادر: {'mt5': True, 'twelvedata': True}
+2025-11-20 15:51:33,895 - data_provider - INFO - 🧪 حالة مصادر البيانات: {'mt5': True, 'twelvedata': True}
+2025-11-20 15:51:33,897 - telegram_bot - INFO - 🔄 تحميل البيانات المسبق في الخلفية...
+2025-11-20 15:51:33,897 - risk_management - INFO - تهيئة RiskManager برصيد: $10000.0
+2025-11-20 15:51:33,897 - data_provider - INFO - ✅ تم جلب 24 شمعة من MT5 لـ EURUSD
+2025-11-20 15:51:33,897 - advanced_analysis - INFO - ✅ تم تهيئة نظام التحليل المتقدم
+2025-11-20 15:51:33,913 - data_provider - INFO - ✅ نجح جلب بيانات EURUSD من mt5
+2025-11-20 15:51:33,915 - economic_calendar - INFO - ✅ تم تهيئة التقويم الاقتصادي
+2025-11-20 15:51:33,915 - session_manager - INFO - ✅ تم تهيئة مدير الجلسات
+2025-11-20 15:51:33,915 - data_provider - WARNING - ⚠️ خطأ في المؤشرات الفنية: 'BBU_20_2.0'
+2025-11-20 15:51:33,930 - data_provider - INFO - ✅ تم جلب 24 شمعة من MT5 لـ GBPUSD
+2025-11-20 15:51:33,930 - data_provider - INFO - ✅ نجح جلب بيانات GBPUSD من mt5
+2025-11-20 15:51:33,930 - data_provider - WARNING - ⚠️ خطأ في المؤشرات الفنية: 'BBU_20_2.0'
+2025-11-20 15:51:33,930 - data_provider - INFO - ✅ تم جلب 24 شمعة من MT5 لـ USDJPY
+2025-11-20 15:51:33,947 - data_provider - INFO - ✅ نجح جلب بيانات USDJPY من mt5
+2025-11-20 15:51:33,947 - data_provider - WARNING - ⚠️ خطأ في المؤشرات الفنية: 'BBU_20_2.0'
+2025-11-20 15:51:33,947 - telegram_bot - INFO - ✅ اكتمل التحميل المسبق
+2025-11-20 15:51:34,336 - telegram_bot - INFO - ✅ تم إعداد معالجات الأوامر
+2025-11-20 15:51:34,336 - telegram_bot - INFO - ✅ تم تهيئة TradingBot بنجاح
+2025-11-20 15:51:34,337 - telegram_bot - INFO - 🚀 بدء تشغيل بوت التليجرام السريع...
+2025-11-20 15:51:34,563 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getMe "HTTP/1.1 200 OK"
+2025-11-20 15:51:34,647 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/deleteWebhook "HTTP/1.1 200 OK"
+2025-11-20 15:51:34,649 - telegram.ext.Application - INFO - Application started
+2025-11-20 15:51:43,932 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:51:44,371 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/sendMessage "HTTP/1.1 200 OK"
+2025-11-20 15:51:44,378 - data_provider - INFO - ✅ تم جلب 2160 شمعة من MT5 لـ EURUSD
+2025-11-20 15:51:44,386 - data_provider - INFO - ✅ نجح جلب بيانات EURUSD من mt5
+2025-11-20 15:51:44,386 - data_provider - WARNING - ⚠️ خطأ في المؤشرات الفنية: 'BBU_20_2.0'
+2025-11-20 15:51:44,386 - advanced_analysis - INFO - 🎯 إشارة لـ EURUSD: انتظار (ثقة: 66.66666666666667%)
+2025-11-20 15:51:44,400 - data_provider - INFO - ✅ تم جلب 2160 شمعة من MT5 لـ GBPUSD
+2025-11-20 15:51:44,400 - data_provider - INFO - ✅ نجح جلب بيانات GBPUSD من mt5
+2025-11-20 15:51:44,400 - data_provider - WARNING - ⚠️ خطأ في المؤشرات الفنية: 'BBU_20_2.0'
+2025-11-20 15:51:44,400 - advanced_analysis - INFO - 🎯 إشارة لـ GBPUSD: انتظار (ثقة: 66.66666666666667%)
+2025-11-20 15:51:44,430 - data_provider - INFO - ✅ تم جلب 2160 شمعة من MT5 لـ USDJPY
+2025-11-20 15:51:44,434 - data_provider - INFO - ✅ نجح جلب بيانات USDJPY من mt5
+2025-11-20 15:51:44,438 - data_provider - WARNING - ⚠️ خطأ في المؤشرات الفنية: 'BBU_20_2.0'
+2025-11-20 15:51:44,440 - advanced_analysis - INFO - 🎯 إشارة لـ USDJPY: بيع (ثقة: 77.5%)
+2025-11-20 15:51:44,461 - data_provider - INFO - ✅ تم جلب 2160 شمعة من MT5 لـ USDCHF
+2025-11-20 15:51:44,465 - data_provider - INFO - ✅ نجح جلب بيانات USDCHF من mt5
+2025-11-20 15:51:44,465 - data_provider - WARNING - ⚠️ خطأ في المؤشرات الفنية: 'BBU_20_2.0'
+2025-11-20 15:51:44,465 - advanced_analysis - INFO - 🎯 إشارة لـ USDCHF: بيع (ثقة: 77.5%)
+2025-11-20 15:51:44,481 - data_provider - INFO - ✅ تم جلب 2160 شمعة من MT5 لـ USDCAD
+2025-11-20 15:51:44,485 - data_provider - INFO - ✅ نجح جلب بيانات USDCAD من mt5
+2025-11-20 15:51:44,487 - data_provider - WARNING - ⚠️ خطأ في المؤشرات الفنية: 'BBU_20_2.0'
+2025-11-20 15:51:44,489 - advanced_analysis - INFO - 🎯 إشارة لـ USDCAD: شراء (ثقة: 75.0%)
+2025-11-20 15:51:44,511 - data_provider - INFO - ✅ تم جلب 2160 شمعة من MT5 لـ AUDUSD
+2025-11-20 15:51:44,512 - data_provider - INFO - ✅ نجح جلب بيانات AUDUSD من mt5
+2025-11-20 15:51:44,512 - data_provider - WARNING - ⚠️ خطأ في المؤشرات الفنية: 'BBU_20_2.0'
+2025-11-20 15:51:44,512 - advanced_analysis - INFO - 🎯 إشارة لـ AUDUSD: انتظار (ثقة: 66.66666666666667%)
+2025-11-20 15:51:44,531 - data_provider - INFO - ✅ تم جلب 2160 شمعة من MT5 لـ XAUUSD
+2025-11-20 15:51:44,531 - data_provider - INFO - ✅ نجح جلب بيانات XAUUSD من mt5
+2025-11-20 15:51:44,531 - data_provider - WARNING - ⚠️ خطأ في المؤشرات الفنية: 'BBU_20_2.0'
+2025-11-20 15:51:44,545 - data_provider - WARNING - ❌ لا توجد بيانات من MT5 لـ USOIL
+2025-11-20 15:51:44,546 - data_provider - WARNING - 🔄 استخدام البيانات الافتراضية الذكية لـ USOIL
+2025-11-20 15:51:44,553 - data_provider - INFO - 📊 استخدام بيانات افتراضية ذكية لـ USOIL (500 شمعة)
+2025-11-20 15:51:44,558 - data_provider - WARNING - ⚠️ خطأ في المؤشرات الفنية: 'BBU_20_2.0'
+2025-11-20 15:51:44,560 - advanced_analysis - INFO - 🎯 إشارة لـ USOIL: انتظار (ثقة: 66.66666666666667%)
+2025-11-20 15:51:44,731 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/sendMessage "HTTP/1.1 200 OK"
+2025-11-20 15:51:44,745 - telegram_bot - INFO - تم إرسال إشارات التداول
+2025-11-20 15:51:54,048 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:52:01,660 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:52:02,043 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/sendMessage "HTTP/1.1 200 OK"
+2025-11-20 15:52:02,043 - telegram_bot - INFO - تم إرسال تقرير المخاطرة
+2025-11-20 15:52:07,707 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:52:17,831 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:52:27,924 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
+2025-11-20 15:52:38,026 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7736822987:AAEi4_21mocV22qTu1WVMiaZ-fPxci9ambs/getUpdates "HTTP/1.1 200 OK"
